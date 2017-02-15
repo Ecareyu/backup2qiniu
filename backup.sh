@@ -2,7 +2,10 @@
 # 原作者:ccbikai(miantiao.me)
 # 修改者 ecareyu(www.ecareyu.com)
 
-## 以下内容都不要修改 ##
+
+# 修复crontab执行时的报错
+cd `dirname $0`
+
 if [ ! -f ./config.ini ]; then
     echo "Please create the config.ini file";
     exit
