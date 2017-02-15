@@ -7,7 +7,6 @@
 # 依赖
 * qshell [下载](http://devtools.qiniu.com/qshell-v2.0.3.zip)
 * zip
-* tar
 
 
 # 配置

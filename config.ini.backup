@@ -1,6 +1,6 @@
 ## 备份配置信息 ##
 
-#qshell路径
+# qshell路径
 QSHELL="/usr/local/bin/qshell"
 # 备份名称，用于标记
 BACKUP_NAME=""
@@ -23,7 +23,7 @@ BACKUP_FILE_PASSWD=""
 
 ## 七牛配置信息 ##
 
-#存放空间对应我们在七牛上创建的文件夹
+# 存放空间对应我们在七牛上创建的容器
 QINIU_BUCKET="bucket"
 QINIU_ACCESS_KEY="ACCESS_KEY"
 QINIU_SECRET_KEY="SECRET_KEY"
