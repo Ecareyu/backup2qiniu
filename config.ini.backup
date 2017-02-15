@@ -1,0 +1,31 @@
+## 备份配置信息 ##
+
+#qshell路径
+QSHELL="/usr/local/bin/qshell"
+# 备份名称，用于标记
+BACKUP_NAME=""
+# 备份目录，多个请空格分隔
+BACKUP_SRC=""
+# Mysql主机地址
+MYSQL_SERVER="localhost"
+# Mysql用户名
+MYSQL_USER=""
+# Mysql密码
+MYSQL_PASS=""
+# Mysql备份数据库，多个请空格分隔
+MYSQL_DBS=""
+# 备份文件临时存放目录，一般不需要更改
+BACKUP_DIR="/tmp/backuptoqiniu"
+# 备份文件压缩密码确保压缩包的安全
+BACKUP_FILE_PASSWD=""
+
+## 备份配置信息 End ##
+
+## 七牛配置信息 ##
+
+#存放空间对应我们在七牛上创建的文件夹
+QINIU_BUCKET="bucket"
+QINIU_ACCESS_KEY="ACCESS_KEY"
+QINIU_SECRET_KEY="SECRET_KEY"
+
+## 七牛配置信息 End ##
