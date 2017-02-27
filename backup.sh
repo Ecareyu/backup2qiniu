@@ -7,12 +7,17 @@
 cd `dirname $0`
 
 if [ ! -f ./config.ini ]; then
-    echo "Please create the config.ini file";
+    echo "Please create the config.ini file"
     exit
 fi
 
 # 将配置信息存储session
 source config.ini
+
+# 设置子目录名
+if [ ! -n "$SUB_DIR_NAME" ]; then
+    SUB_DIR_NAME=`hostname`
+fi
 
 if [ ! -f "$QSHELL" ]; then
     echo "Qshell not found, plese install from this link https://github.com/qiniu/qshell"
@@ -55,7 +60,7 @@ echo "tar ok"
 
 # 上传,默认100条线程,管它呢
 echo "start upload"
-$QSHELL rput $QINIU_BUCKET $BACKUP_FILENAME $BACKUP_DIR/$BACKUP_FILENAME
+$QSHELL rput $QINIU_BUCKET $SUB_DIR_NAME/$BACKUP_FILENAME $BACKUP_DIR/$BACKUP_FILENAME
 echo "upload ok"
 
 # 清理备份文件

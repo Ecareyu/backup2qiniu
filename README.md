@@ -5,7 +5,7 @@
 后来发现七牛提供了很好的工具，所以还是不重复造轮子，直接拿来用。
 
 # 依赖
-* qshell [下载](http://devtools.qiniu.com/qshell-v2.0.3.zip)
+* qshell [下载](https://github.com/qiniu/qshell)
 * zip
 
 
@@ -30,6 +30,9 @@ crontab -e
 # 我这边网站不活跃，这里配置成每月备份一次
 * * * 1 * /bin/bash /foo/backup.sh
 ```
+
+# 更新说明
+* [issue-#1](https://github.com/Ecareyu/backup2qiniu/issues/1) 增加子目录配置项,为空时获取服务器hostname作为子目录名
 
 # 参考
 [backuptoqiniu](https://github.com/ccbikai/backuptoqiniu)
