@@ -27,8 +27,8 @@ crontab -e
 # 填入以下,每天凌晨两点执行一次备份,这里可以根据活跃度进行调整
 0 2 * * * /bin/bash /foo/backup.sh
 
-# 我这边网站不活跃，这里配置成每月备份一次
-* * * 1 * /bin/bash /foo/backup.sh
+# 我这边网站不活跃，这里配置成每月1号0点进行备份
+0 0 1 * * /bin/bash /foo/backup.sh
 ```
 
 # 更新说明
